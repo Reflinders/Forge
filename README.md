@@ -108,7 +108,7 @@ local member_of_c = c.new() -- This should print a, b, and c in that given order
 
 # Utilities
 
-Along with the `forge` keyword, there is also `const` and `sojourn` — const creates a new constant value and sojourn creates a new dynamic value. To create a constant, simply call const with the given value. to create a designation (sojourn), create it through sojourn, passing a function that returns the value. Both of these values will only work if it is a DIRECT member of the base class table that is passed!
+Along with the `forge` keyword, there is also `const` and `sojourn` — `const` creates a new constant value and `sojourn` creates a new dynamic value. To create a constant, simply call `const` with the given value. to create a designation (sojourn), create it through `sojourn`, passing a function that returns the value. Both of these values will only work if it is a DIRECT member of the base class table that is passed!
 
 Here's an example of both of their usages:
 ```lua
@@ -138,7 +138,7 @@ print(MyClock.OtherProperty) -- Not "Hi"; instead, the metadata of that constant
 MyClock.Owner = "Mlgsucks" -- Will throw an error!
 ```
 
-Classes, alongside `init`, have the methods `metamethod` and `depend`. `metamethod` is used to add metamethods to the class. These metamethods, however, aren't applied to the class, but rather new members of the class. There are a few metamethods that cannot be modified through `metamethod` — `__index`, `__newindex`, and `__tostring`. the `depend` method creates a new fallback layer for the class's __index method; in a nutshell, it adds a bundle of properties to a class (but note it is a bit more complex than that).
+Classes, alongside `init`, have the methods `metamethod` and `depend`. `metamethod` is used to add metamethods to the class. These metamethods, however, aren't applied to the class, but rather new members of the class. There are a few metamethods that cannot be modified through `metamethod` — `__index`, `__newindex`, and `__tostring`. the `depend` method creates a new fallback layer for the class's `__index` method; in a nutshell, it adds a bundle of properties to a class (but note it is a bit more complex than that).
 
 Here's an example of both methods:
 ```lua
