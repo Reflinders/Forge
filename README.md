@@ -31,7 +31,7 @@ end)
 
 --// method 2
 
-local MyClass = local MyClass = forge "MyClass" {
+local MyClass = forge "MyClass" {
   Hello = "Hello, World!"
 }
 
