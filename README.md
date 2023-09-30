@@ -132,10 +132,10 @@ print(MyClock.Time) -- About 0
 task.wait(3)
 print(MyClock.Time) -- About 3
 
-print(MyClock.Const) -- "Mlgisbetter"
+print(MyClock.Owner) -- "Mlgisbetter"
 print(MyClock.OtherProperty) -- Not "Hi"; instead, the metadata of that constant, so a weird looking table
 
-MyClock.Const = "Mlgsucks" -- Will throw an error!
+MyClock.Owner = "Mlgsucks" -- Will throw an error!
 ```
 
 Classes, alongside `init`, have the methods `metamethod` and `depend`. `metamethod` is used to add metamethods to the class. These metamethods, however, aren't applied to the class, but rather new members of the class. There are a few metamethods that cannot be modified through `metamethod` — `__index`, `__newindex`, and `__tostring`. the `depend` method creates a new fallback layer for the class's __index method; in a nutshell, it adds a bundle of properties to a class (but note it is a bit more complex than that).
