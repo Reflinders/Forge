@@ -1,5 +1,5 @@
 # Forge
-Powerful class-based system for Luau
+Forge is a powerful class-based system for Luau. It has a small but useful set of utilities that are intrinsic to Classes in Luau. Alongside that, there is an inheritance system that allows for as much inheritance as you'd like!
 
 # Acquiring
 To begin using Forge, you must first acquire the 3 base components:
