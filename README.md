@@ -1,5 +1,5 @@
 # Forge
-Powerful class-based systems in Luau
+Powerful class-based system for Luau
 
 # Acquiring
 To begin using Forge, you must first acquire the 3 base components:
